@@ -1,0 +1,12 @@
+
+all: Project2Interface Project2Server
+
+Project2Interface: Project2Interface.c Project2.h
+	$(CC) -o Project2Interface Project2Interface.c
+
+Project2Server: Project2Server.c Project2.h
+	$(CC) -o Project2Server Project2Server.c
+
+clean:
+rm -f Project2Interface
+rm -f Project2Server

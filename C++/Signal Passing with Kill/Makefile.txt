@@ -1,0 +1,13 @@
+#Makefile
+
+all: Project4 Project4Second
+
+Project4: Project4.c Project4.h
+	$(CC) -o Project4 Project4.c
+
+Project4Second: Project4Second.c Project4.h
+	$(CC) -o Project4Second Project4Second.c
+
+clean:
+	rm -f Project4
+	rm -f Project4Second
